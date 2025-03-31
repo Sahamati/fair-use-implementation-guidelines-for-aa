@@ -20,6 +20,10 @@ When an incoming consent request is received from an FIU (Financial Information 
 This Google Sheet provides the details of all the rules:  
 [Fair Use Rules Database](https://docs.google.com/document/d/1NXVrhmrKw99BwUxCeAyyepPRkVj3ioPEuvxhQ2xQyh0/edit?tab=t.0)  
 
+## available on github here:
+[Consent Request Rules and Rule Matching Guidelines](Consent%20Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
+
+ 
 ## Implementing Rule Matching Logic for Consent Requests  
 
 AAs must build systems that use a rule-based approach to validate consent requests based on the fair use rules. Here's how the matching works:  
@@ -49,6 +53,10 @@ AA must maintain a rule database for FI Requests to ensure compliance with the F
 
 This Google Document provides the list of rules for FI Requests:  
 [FI Request Rules Database](https://docs.google.com/document/d/1NXVrhmrKw99BwUxCeAyyepPRkVj3ioPEuvxhQ2xQyh0/edit?tab=t.0)  
+
+Available on Github here:
+[FI-Request Rules and Rule Matching Guidelines](FI-Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
+
 
 ## Implementing Rule Matching Logic for FI Requests  
 
