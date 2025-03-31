@@ -1,0 +1,5 @@
+# Fair Use Implementation Guidelines for AAs
+
+This repository contains the **Fair Use Implementation Guidelines** prepared in collaboration with [Finvu AA](https://finvu.in/) to help standardize the implementation of the fair use templates published by [Sahamati](https://sahamati.org.in/aa-fair-use-template-library/), which were finalized by the council of FIUs under the [Fair Use Framework](https://sahamati.org.in/aa-fair-use-committee/).
+
+The guidelines are based on the **default rule with exceptions**, where rules are applied to all FIUs by default based on Purpose Code. On an exception basis, new rules are applied to a specific set of FIUs where more than one fair use template is assigned to a Purpose Code. This ensures that Consent Requests and FI Requests adhere to the upper bounds set for various consent attributes as per the Fair Use Template Library.
