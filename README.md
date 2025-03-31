@@ -8,4 +8,4 @@ The guidelines are based on the **default rule with exceptions**, where rules ar
 1. [Implementation Guidelines](Implementation%20Guidelines.md)
 2. [Consent Request Rules and Rule Matching Guidelines](Consent%20Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
 3. [FI-Request Rules and Rule Matching Guidelines](FI-Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
-4. [Sahamati Fair Use](Sahamati-Fairuse.md)
+4. [Sahamati Fair Use Implementation Guidelines](Sahamati-Fairuse.md)
