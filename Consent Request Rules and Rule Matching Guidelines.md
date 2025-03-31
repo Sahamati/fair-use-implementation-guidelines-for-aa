@@ -1,4 +1,3 @@
-# Consent Creation Rules
 
 ## Fair Use Rule Set for Consent Creation and Approval
 
