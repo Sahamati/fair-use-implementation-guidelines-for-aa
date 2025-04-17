@@ -1,4 +1,4 @@
-## Fair Use Implementation for FIUs
+## Fair Use Implementation Guidelines for FIUs
 
 As part of the participatory governance initiative, FIUs are expected to implement the Fair Use templates as agreed upon by the ecosystem for their respective use cases. The parameters of the individual Fair Use templates in the Fair Use Template Library represent upper bounds for the respective use cases, as decided by the relevant User Councils.
 
