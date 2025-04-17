@@ -25,9 +25,9 @@ This repository contains the **Fair Use Implementation Guidelines** prepared in 
 The guidelines are based on the **default rule with exceptions**, where rules are applied to all FIUs by default based on Purpose Code. On an exception basis, new rules are applied to a specific set of FIUs where more than one fair use template is assigned to a Purpose Code. This ensures that Consent Requests and FI Requests adhere to the upper bounds set for various consent attributes as per the Fair Use Template Library.
 
 ## Repository Files for AAs
-1. [Implementation Guidelines](Implementation%20Guidelines.md)
-2. [Consent Request Rules and Rule Matching Guidelines](Consent%20Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
-3. [FI-Request Rules and Rule Matching Guidelines](FI-Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
+1. [Fair Use Implementation Guidelines for AA ecosytem](Implementation%20Guidelines.md)
+2. [AAs - Consent Request Rules and Rule Matching Guidelines](Consent%20Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
+3. [AAs - FI-Request Rules and Rule Matching Guidelines](FI-Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
 4. [Error Codes and Messages for Deviant Transactions](https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/main/AAs%20-%20Fair%20Use%20Implementation%20Guidelines.md#error-codes-and-messages-for-deviant-transactions)
 5. [Monthly Fair Use Reporting by AAs – Guidelines on Data Collation](https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/main/AAs%20-%20Fair%20Use%20Implementation%20Guidelines.md#error-codes-and-messages-for-deviant-transactions)
 
@@ -41,4 +41,7 @@ FIUs must initiate consent and data requests within the boundaries defined by Fa
 FIPs may act as a secondary layer of enforcement for Fair Use compliance by following the same rules as AAs, validating consent and data requests against Fair Use templates. Since Fair Use Template IDs are not passed in consent requests, FIPs are expected to follow the same Fair Use rules and matching logic as Account Aggregators (AAs) when evaluating incoming requests.
 
 ## Repository Files for FIPs
-[FIPs - Fair Use Implementation Guidelines.md](https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/main/FIPs%20-%20Fair%20Use%20Implementation%20Guidelines.md)
+1. [FIPs - Fair Use Implementation Guidelines.md](https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/main/FIPs%20-%20Fair%20Use%20Implementation%20Guidelines.md)
+2. [AAs - Consent Request Rules and Rule Matching Guidelines](Consent%20Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
+3. [AAs - FI-Request Rules and Rule Matching Guidelines](FI-Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
+
