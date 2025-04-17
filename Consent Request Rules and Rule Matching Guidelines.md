@@ -1,5 +1,5 @@
 
-## Fair Use Rule Set for Consent Creation and Approval
+## Guidelines for AAs - Fair Use Rule Set for Consent Creation and Approval
 
 | fiu_id   | sahamati_template_id | purpose_code | fetch_type | fi_type | fair_use_rules |
 |----------|----------------------|--------------|------------|---------|----------------|
