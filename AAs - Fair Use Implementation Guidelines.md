@@ -1,4 +1,4 @@
-# fair-use-implementation-guidelines-for-aa
+# Fair-use Implementation Guidelines For AA
 This repository contains the Fair Use Implementation Guidelines for Account Aggregators (AAs). It outlines the necessary steps to ensure that all Consent requests and FI/requests comply with the upper bounds set in the Fair Use Template Library
 # Fair Use Implementation Guidelines for AAs
 
@@ -18,9 +18,9 @@ AAs must create a structured database to store Fair Use Rules for consent creati
 When an incoming consent request is received from an FIU (Financial Information User), the system must follow the Fair Use Rules. The system must use the parameters of FIU_ID, FIP_ID, Sahamati Fair Use Template ID, Fetch Type, Purpose Code, and FI Types to ensure compliance with the predefined rule.  
 
 This Google Sheet provides the details of all the rules:  
-[Fair Use Rules Database](https://docs.google.com/document/d/1NXVrhmrKw99BwUxCeAyyepPRkVj3ioPEuvxhQ2xQyh0/edit?tab=t.0)  
+[Fair Use Rules Database](https://docs.google.com/document/d/174d79GhuvVGTF8BHsytU4Aklb14jQmYMdDmIfPRBhew)  
 
-## available on github here:
+## Available on Github here:
 [Consent Request Rules and Rule Matching Guidelines](Consent%20Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
 
  
@@ -110,3 +110,33 @@ In summary, the system must ensure that all consent requests and approvals adher
 
 For examples, refer to this document:  
 [Fair Use Guidelines & Examples](https://docs.google.com/document/d/1NXVrhmrKw99BwUxCeAyyepPRkVj3ioPEuvxhQ2xQyh0/edit?tab=t.0)  
+
+## Error Codes and Messages for Deviant Transactions
+
+AAs must return standardized responses when a Consent or FI request does not conform to the approved Fair Use templates. In such cases, the HTTP status code **412 – Precondition Failed** must be used.
+
+| API            | HTTP Error Code | Response Type        | Error Message Format                                                                 |
+|----------------|------------------|-----------------------|----------------------------------------------------------------------------------------|
+| Consent Request | 412              | Precondition Failed   | Consent parameters are not as per fair use policy – {Attribute name} is invalid.       |
+| FI/Request      | 412              | Precondition Failed   | FI data range is not as per fair use policy.                                           |
+
+> The `{Attribute name}` placeholder may be replaced with the specific non-compliant parameter (e.g., `Purpose`, `Frequency`, `Data Range`) where applicable.  
+> AAs may choose whether or not to include specific deviation details in the error message.  
+> The level of detail is left to the discretion of the AA, with the intent of assisting FIUs in identifying and correcting non-compliant requests.
+
+---
+
+## Monthly Fair Use Reporting by AAs – Guidelines on Data Collation
+
+To support ecosystem-wide transparency and encourage collaborative adoption of Fair Use Templates, AAs are expected to submit **monthly reports** summarizing their implementation status.
+
+Below are the recommended data points along with guidance on how to collate and report each metric:
+
+| Field Name                                                  | Format                                     | Guidelines on Data Collection                                                                                                                                         |
+|-------------------------------------------------------------|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Actions Taken for Compliance                                | Text                                       | AAs are expected to maintain internal records of outreach and operational activities related to Fair Use implementation. Examples include: one-on-one calls with FIUs, email campaigns, identifying and flagging deviations, providing support on template alignment, enabling real-time detection mechanisms, etc. Multiple actions may be listed as a comma-separated string. |
+| % of FIUs Confirmed Adherence to Fair Use Templates         | Percent                                    | Estimate the percentage of integrated FIUs who have confirmed that Fair Use Templates are being followed, based on request patterns and implementation observations.   |
+| Is Detection of Fair Use Template Compliance Automated?     | Fully Automated / Partially Automated / Yet to be Automated | Indicate the state of automation for detecting Fair Use Template compliance within your systems as of the end of the reporting month.                                 |
+| If Above is not 'Fully Automated', Estimated Implementation Date | DD-MM-YYYY                               | If compliance detection is not fully automated, provide a realistic date by which automation is expected to be completed.                                              |
+| % of Consents Raised as per Fair Use Templates              | Percent                                    | Collate details of consent requests received during the reporting month and determine the percentage that align with known Fair Use Templates using internal matching logic. |
+
