@@ -8,4 +8,5 @@ The guidelines are based on the **default rule with exceptions**, where rules ar
 1. [Implementation Guidelines](Implementation%20Guidelines.md)
 2. [Consent Request Rules and Rule Matching Guidelines](Consent%20Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
 3. [FI-Request Rules and Rule Matching Guidelines](FI-Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
-4. [Sahamati Fair Use Implementation Guidelines](Sahamati-Fairuse.md)
+4. [Error Codes and Messages for Deviant Transactions](https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/main/AAs%20-%20Fair%20Use%20Implementation%20Guidelines.md#error-codes-and-messages-for-deviant-transactions)
+5. [Monthly Fair Use Reporting by AAs – Guidelines on Data Collation](https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/main/AAs%20-%20Fair%20Use%20Implementation%20Guidelines.md#error-codes-and-messages-for-deviant-transactions)
