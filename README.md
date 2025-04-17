@@ -35,7 +35,7 @@ The guidelines are based on the **default rule with exceptions**, where rules ar
 FIUs must initiate consent and data requests within the boundaries defined by Fair Use templates published by Sahamati. These templates set upper limits for parameters like purpose, frequency, and data range to ensure responsible data access and ecosystem consistency.
 
 ## Repository Files for FIUs
-FIUs - Fair Use Implementation Guidelines(https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/main/FIUs%20-%20Fair%20Use%20Implementation%20Guidelines.md)
+[FIUs - Fair Use Implementation Guidelines](https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/main/FIUs%20-%20Fair%20Use%20Implementation%20Guidelines.md)
 
 ### Fair Use Implementation Guidelines for FIPs
 FIPs may act as a secondary layer of enforcement for Fair Use compliance by following the same rules as AAs, validating consent and data requests against Fair Use templates. Since Fair Use Template IDs are not passed in consent requests, FIPs are expected to follow the same Fair Use rules and matching logic as Account Aggregators (AAs) when evaluating incoming requests.
