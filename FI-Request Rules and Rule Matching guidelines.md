@@ -1,4 +1,4 @@
-## Setting up a Rule Database for FI Request
+## Guidelines for AAs - Setting up a Rule Database for FI Request
 
 AA must maintain a rule database for FI Requests to ensure compliance with the Fair Use Policy and meet the FIP-wise constraints around the maximum data range allowed in a single request.
 
