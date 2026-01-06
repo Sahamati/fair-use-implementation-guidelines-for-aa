@@ -56,5 +56,4 @@ Sahamati will publish additional Fair Use templates as the AA ecosystem evolves,
 
 ---
 
-The same is available in Google Document here:  
-[https://docs.google.com/document/d/1Q-3-tde1zMsWg-iKMUtgWGi8Vy8SC-mmONYFSx4Ucxo/edit?tab=t.0](https://docs.google.com/document/d/1Q-3-tde1zMsWg-iKMUtgWGi8Vy8SC-mmONYFSx4Ucxo/edit?tab=t.0)
+The same is available in Google Document here: https://docs.google.com/document/d/12meAAjUhc7DrCUXDiZ9rsSu7ssTjuhgD8OJJQ_iv5Wk/edit?
