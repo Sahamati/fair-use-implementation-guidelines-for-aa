@@ -17,8 +17,8 @@ AAs must create a structured database to store Fair Use Rules for consent creati
 
 When an incoming consent request is received from an FIU (Financial Information User), the system must follow the Fair Use Rules. The system must use the parameters of FIU_ID, FIP_ID, Sahamati Fair Use Template ID, Fetch Type, Purpose Code, and FI Types to ensure compliance with the predefined rule.  
 
-This Google Sheet provides the details of all the rules:  
-[Fair Use Rules Database](https://docs.google.com/document/d/174d79GhuvVGTF8BHsytU4Aklb14jQmYMdDmIfPRBhew)  
+This Google Sheet provides the details of all the rules - Fair Use Rules are indicative and should be adapted to suit respective AAs' individual system build  
+[Fair Use Rules Database](https://docs.google.com/document/d/174d79GhuvVGTF8BHsytU4Aklb14jQmYMdDmIfPRBhew/edit?tab=t.0)  
 
 ## Available on Github here:
 [Consent Request Rules and Rule Matching Guidelines](Consent%20Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
@@ -109,7 +109,7 @@ For every FI Request (for data), the system must:
 In summary, the system must ensure that all consent requests and approvals adhere to the established Fair Use Rules, safeguarding customer interests, compliance, and maintaining the integrity of the consent management process.  
 
 For examples, refer to this document:  
-[Fair Use Guidelines & Examples](https://docs.google.com/document/d/1NXVrhmrKw99BwUxCeAyyepPRkVj3ioPEuvxhQ2xQyh0/edit?tab=t.0)  
+[Fair Use Guidelines & Examples](https://docs.google.com/document/d/174d79GhuvVGTF8BHsytU4Aklb14jQmYMdDmIfPRBhew/)  
 
 ## Error Codes and Messages for Deviant Transactions
 
