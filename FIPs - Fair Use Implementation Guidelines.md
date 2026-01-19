@@ -16,4 +16,4 @@ Since Fair Use Template IDs are not passed in consent requests, FIPs are expecte
 
 ---
 
-For reference, the same content is available in the Google Doc:  https://docs.google.com/document/d/1dKav_P-5MtQ4-W8ylJVLHsWqVVYMo6jOfJ9HRpkCs2o/
+For reference, the same content is available in the Google Doc: https://docs.google.com/document/d/19cwoaZVvl-ULUKYpSW9NMj_tseiYC8NV0hm1fyjhQN0/edit?tab=t.0
