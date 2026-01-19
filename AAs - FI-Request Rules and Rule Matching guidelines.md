@@ -10,7 +10,8 @@ AA must maintain a rule database for FI Requests to ensure compliance with the F
 | 101         | Other FI Types| 13 months           | 13 months                |
 | 102         | SEBI FI Types | 10 years            | 2 years                  |
 | 102         | Other FI Types| 13 months           | 13 months                |
-| 103         | All FI Types  | 14 months           | 14 months                |
+| 103         | DEPOSIT       | 24 months           | 24 months                |
+| 103         | Other FI Types| 14 months           | 14 months                |
 | 104         | All FI Types  | 6 months            | 6 months                 |
 | 105         | All FI Types  | 1 day               | 1 day                    |
 
@@ -20,7 +21,10 @@ AA must maintain a rule database for FI Requests to ensure compliance with the F
 The system should match each FI Request against predefined rules using Purpose Code, FI Type, and maximum FI Data Range.
 
 ### SEBI FI Type Handling
-For Purpose Codes 101 and 102, ensure that no single FI Request exceeds 2 years for SEBI FI Types, even if the overall limit allows more.
+For Purpose Codes 101 and 102, ensure that no single FI Request exceeds 2 years for SEBI FI Types, even if the overall limit allows more. (Due to operational constraints at FIP end)
+
+### DEPOSIT FI Type Handling
+For Purpose Codes 103, ensure that no single FI Request exceeds 24 months FI Type - DEPOSIT.
 
 ### Multiple FI Types
 If multiple FIP IDs are in the same request, the system should apply the strictest FI Data Range applicable to SEBI and non-SEBI entities.
