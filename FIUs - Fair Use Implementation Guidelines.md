@@ -12,7 +12,7 @@ Sahamati will publish additional Fair Use templates as the AA ecosystem evolves,
   This describes the specific financial need or context for which the data is being accessed. FIUs must align their consent purpose with this use case and avoid using the template for unrelated use cases.
 
 - **Purpose Text**  
-  FIUs must display the exact purpose text as provided in the template to ensure uniform customer communication across the ecosystem. No customization is allowed, as this text is designed to build trust and clarity.
+  FIUs should reference the purpose text in the Fair Use Template to ensure consistent, clear customer communication across the ecosystem. The intent and meaning of the template's purpose text must not be altered. FIUs may enhance the purpose text to provide additional information relevant to their use case (such as product details), provided such enhancements do not change the underlying use case or bundle multiple use cases within a single template.
 
 - **Purpose Code**  
   This maps to the ReBIT-specified purpose codes and is used for backend classification of consent and rule setting at AA and FIPs. FIUs must use the purpose code as-is from the template.
