@@ -190,7 +190,7 @@ An example of the XML structure described above is provided in Appendix 2. The J
  
 The XML is hosted on the public Fair Use Registry and is accessible to anyone, including customers and the public, ensuring full transparency of the agreed upper bounds for each use case.
 
-##### Table 5: Fair Use Registry Links
+##### Table: Fair Use Registry Links as on the date of this release:
  
 <table>
 <thead>
