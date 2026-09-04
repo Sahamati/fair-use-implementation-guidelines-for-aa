@@ -62,17 +62,23 @@ These guidelines are issued to ensure uniform adoption, orderly transition, and 
 **1. Access:** All published Fair Use Templates are listed in the Fair Use Template Library on the Sahamati website at: https://sahamati.org.in/aa-fair-use-template-library/. This page contains the master table listing every Fair Use Template finalised by the User Councils and Fair Use Committee. The Library table now includes two new columns, XML Link and JSON Link, pointing to the corresponding entries in the Fair Use Registry at library.sahamati.org.in. FIUs, AAs, and FIPs can directly copy the correct Registry URL for their use case from this table.
  
 **2. How to Discover the Correct Template URL:**
- 
+
 **2.1.** **Visit** the Fair Use Template Library: Navigate to https://sahamati.org.in/aa-fair-use-template-library/
+
 **2.2.** **Identify Your Use Case:** Locate the row matching your Purpose Code and use case description. For Purpose Codes with multiple templates (e.g., 104 with Loan Monitoring and Loan Monitoring for Collections), select the correct one.
+
 **2.3.** **Copy the XML Link:** Use the XML link from the corresponding column. Place it in the refUri field of the consent request. It must be XML and not JSON.
+
 **2.4.** **Optionally Use JSON:** If your internal systems prefer JSON for rule-engine integration, use the JSON link for programmatic access (but not inside the purpose block).
 
 **3. Programmatic Access to the Fair Use Registry**
  
 **3.1.** FIUs, AAs, and FIPs should not pull the Fair Use Registry URLs more than once per 24-hour period. Templates change only when the Fair Use Committee finalises revisions. Excessive pulling creates unnecessary traffic and may result in rate-limiting.
+
 **3.2.** Cache XMLs / JSONs locally in your validation engine for the next 24 hours.
+
 **3.3.** Use the cached version for all real-time consent request validations during the day. On the next pull, compare with the cached version. If changed (version incremented, parameters updated), update the cache and log for audit.
+
 **3.4.** Do NOT fetch the XML/JSON on every incoming consent request. This is unnecessary and generates excessive traffic.
 
 **4. Availability and Support:** The Fair Use Registry XML and JSON endpoints at library.sahamati.org.in are designed to be available 24 hours a day, 7 days a week. In the event of unavailability:
