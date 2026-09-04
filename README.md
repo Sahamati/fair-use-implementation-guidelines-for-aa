@@ -1,47 +1,56 @@
-# Fair Use Implementation Guidelines for AA Ecosystem
-
-## Introduction
-
-The Fair Use Implementation Guidelines for the AA Ecosystem serve as a shared reference point for participants in the Account Aggregator (AA) ecosystem — including Account Aggregators (AAs), Financial Information Providers (FIPs), and Financial Information Users (FIUs). These guidelines promote responsible data sharing practices while maintaining user trust, regulatory compliance, and ecosystem-wide consistency.
-
-The guidelines define upper bounds for data collection and storage through pre-agreed Fair Use templates, which specify limits on parameters such as purpose, frequency, validity, consent type, and data range. They were developed through participatory governance, with active involvement from industry stakeholders via Use Case Councils and the Fair Use Committee.
-
-Each participant of the AA ecosystem plays a distinct and complementary role in enforcing Fair Use:
-
-- **Financial Information Users (FIUs):** FIUs are expected to initiate consent and data requests strictly within the boundaries defined by Fair Use templates. Please note that Fair Use templates are not regulatory advice, but ecosystem-wide guidelines. FIUs must also ensure that their practices remain compliant with laws such as the RBI’s Master Directions on NBFC-AA and the DPDP Act.
-
-- **Account Aggregators (AAs):** AAs are the primary enforcers of Fair Use. They validate whether incoming consent and data requests comply with published Fair Use templates.
-
-- **Financial Information Providers (FIPs):** FIPs are the custodians of customer data and may act as a second line of enforcement.
-
-This dual-layered enforcement — at both AA and FIP ends — enhances trust and reliability in the system.
-
-Sahamati will continue to evolve the Fair Use framework by adding new templates, revising existing ones based on feedback or regulatory developments, and publishing clarifications and FAQs to support adoption.
-
-# Fair Use Implementation Guidelines for AAs
-
-This repository contains the **Fair Use Implementation Guidelines** prepared in collaboration with [Finvu AA](https://finvu.in/) to help standardize the implementation of the fair use templates published by [Sahamati](https://sahamati.org.in/aa-fair-use-template-library/), which were finalized by the council of FIUs under the [Fair Use Framework](https://sahamati.org.in/aa-fair-use-committee/).
-
-The guidelines are based on the **default rule with exceptions**, where rules are applied to all FIUs by default based on Purpose Code. On an exception basis, new rules are applied to a specific set of FIUs where more than one fair use template is assigned to a Purpose Code. This ensures that Consent Requests and FI Requests adhere to the upper bounds set for various consent attributes as per the Fair Use Template Library.
-
-## Repository Files for AAs
-1. [Fair Use Implementation Guidelines for AA ecosytem](https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/main/AAs%20-%20Fair%20Use%20Implementation%20Guidelines.md)
-2. [AAs - Consent Request Rules and Rule Matching Guidelines.md](https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/v1.1/AAs%20-%20Consent%20Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
-3. [AAs - FI-Request Rules and Rule Matching Guidelines](https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/v1.1/AAs%20-%20FI-Request%20Rules%20and%20Rule%20Matching%20guidelines.md)
-4. [Error Codes and Messages for Deviant Transactions](https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/main/AAs%20-%20Fair%20Use%20Implementation%20Guidelines.md#error-codes-and-messages-for-deviant-transactions)
-5. [Monthly Fair Use Reporting by AAs – Guidelines on Data Collation](https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/main/AAs%20-%20Fair%20Use%20Implementation%20Guidelines.md#error-codes-and-messages-for-deviant-transactions)
-
-### Fair Use Implementation Guidelines for FIUs
-FIUs must initiate consent and data requests within the boundaries defined by Fair Use templates published by Sahamati. These templates set upper limits for parameters like purpose, frequency, and data range to ensure responsible data access and ecosystem consistency.
-
-## Repository Files for FIUs
-[FIUs - Fair Use Implementation Guidelines](https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/main/FIUs%20-%20Fair%20Use%20Implementation%20Guidelines.md)
-
-### Fair Use Implementation Guidelines for FIPs
-FIPs may act as a secondary layer of enforcement for Fair Use compliance by following the same rules as AAs, validating consent and data requests against Fair Use templates. Since Fair Use Template IDs are not passed in consent requests, FIPs are expected to follow the same Fair Use rules and matching logic as Account Aggregators (AAs) when evaluating incoming requests.
-
-## Repository Files for FIPs
-1. [FIPs - Fair Use Implementation Guidelines.md](https://github.com/Sahamati/fair-use-implementation-guidelines-for-aa/blob/main/FIPs%20-%20Fair%20Use%20Implementation%20Guidelines.md)
-2. [AAs - Consent Request Rules and Rule Matching Guidelines](Consent%20Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
-3. [AAs - FI-Request Rules and Rule Matching Guidelines](FI-Request%20Rules%20and%20Rule%20Matching%20Guidelines.md)
-
+### Background and Context for Fair Use Implementation Rules
+ 
+The Fair Use implementation rules have played a critical role in sensitising FIUs to the use of fair use templates and enabling consistent enforcement across the Account Aggregator (AA) ecosystem. Data shared by AAs indicates that Fair Use templates were adopted across FIUs, reflecting ecosystem-wide alignment and operational stability. However, as adoption has scaled and more use cases have become prevalent, certain structural limitations have emerged in the current implementation model, particularly where multiple Fair Use templates exist under the same Purpose Code.
+ 
+Based on the AA Council and Fair Use Committee, it is recommended that FIUs explicitly include the Fair Use Template ID in the consent initiation request, using the `refUri` field. Consequently, this document covers Fair Use Implementation Rules v2.0, including an explicit mechanism to identify the Fair Use Template used by the FIU, with the reference provided in the `refUri` field of the consent request. This approach aligns with ReBIT expectations, which allow FIUs to provide a URL to additional information explaining the purpose or use case. The purpose refURI will indicate which Fair Use Template is being implemented by FIUs, allowing AAs and FIPs to validate against the declared template.
+ 
+**These rules are intended to supersede and deprecate the existing Version 1x of Fair Use Implementation Rules.**
+ 
+### Scope of the Document
+ 
+This document sets out the **Adoption Guidelines for Fair Use Implementation Rules v2.0**, including scope and entity-specific obligations for FIUs, AAs, and FIPs. Compared to v1.0, where Fair Use Guidelines were published as separate documents for FIUs, AAs, and FIPs, v2.0 consolidates them into a single unified document that provides an end-to-end view while clearly identifying the responsibilities of each participant role.
+ 
+Fair Use Implementation Rules v2.0 introduce explicit identification of the use case with a combination of Purpose Code and Fair Use Template via the refUri field, enabling deterministic validation and removing ambiguity arising from multiple templates under a single Purpose Code.
+ 
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>v1.0 (Previous)</th>
+<th>v2.0 (This Document)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Document Structure</strong></td>
+<td>Separate documents per role plus separate rule-set files</td>
+<td>Single unified document covering all three roles, with appendices</td>
+</tr>
+<tr>
+<td><strong>Template Identification</strong></td>
+<td>Inferred by AA via Purpose Code + wildcard matching; Template ID not shared with FIPs</td>
+<td>FIU declares explicit Registry XML link in consent request; AA forwards to FIP as-is</td>
+</tr>
+<tr>
+<td><strong>Validation Method</strong></td>
+<td>AA maintains internal rule database; FIPs replicate AA logic independently</td>
+<td>AA and FIP both validate directly against the XML from the Fair Use Registry</td>
+</tr>
+<tr>
+<td><strong>FI Data Range by FI Category</strong></td>
+<td>Separate rule tables for SEBI vs non-SEBI FI Types per Purpose Code</td>
+<td>SEBI and NON-SEBI FI categories with their FI Data Range are embedded directly in each XML template</td>
+</tr>
+<tr>
+<td><strong>Purpose Text</strong></td>
+<td>Recommended but not strictly enforced at validation layer</td>
+<td>Expected to be present for all templates</td>
+</tr>
+<tr>
+<td><strong>Template Discovery</strong></td>
+<td>Templates available on website but no machine-readable links</td>
+<td>Fair Use Registry introduced at library.sahamati.org.in; XML and JSON Link columns added to the Library table</td>
+</tr>
+</tbody>
+</table>
+These guidelines are issued to ensure uniform adoption, orderly transition, and predictable enforcement across the AA ecosystem.
